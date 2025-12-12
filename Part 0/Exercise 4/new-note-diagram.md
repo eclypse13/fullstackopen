@@ -4,9 +4,9 @@ sequenceDiagram
     participant Server
 
     Note right of Client: The Client enters the text of the note and clicks the Save button.
-    Client->>Server: POST https:////studies.cs.helsinki.fi/exampleapp/new_note
+    Client->>Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate Server
-    Note left of Server: The Server is processing the request.
+    Server->>Client: The Server is processing the request and redirects the Client to the same page.
     deactivate Server
 
     Client->>Server: GET https://studies.cs.helsinki.fi/exampleapp/notes
