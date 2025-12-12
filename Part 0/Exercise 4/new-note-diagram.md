@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
     participant Client
     participant Server
@@ -28,3 +29,4 @@ sequenceDiagram
     Server->>Client: The JSON file
     Note right of Server: The server sends JSON containing the new note if it has been saved.
     deactivate Server
+```
