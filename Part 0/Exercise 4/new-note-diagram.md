@@ -6,7 +6,7 @@ sequenceDiagram
     Note right of Client: The Client enters the text of the note and clicks the Save button.
     Client->>Server: POST https:////studies.cs.helsinki.fi/exampleapp/new_note
     activate Server
-    Note right of Server: The Server is processing the request.
+    Note left of Server: The Server is processing the request.
     deactivate Server
 
     Client->>Server: GET https://studies.cs.helsinki.fi/exampleapp/notes
@@ -27,6 +27,6 @@ sequenceDiagram
     Client->>Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate Server
     Server->>Client: The JSON file
-    Note right of Server: The server sends JSON containing the new note if it has been saved.
+    Note left of Server: The server sends JSON containing the new note if it has been saved.
     deactivate Server
 ```
